@@ -21,48 +21,11 @@ public class Busqueda extends javax.swing.JFrame {
         initComponents();
     }
 
-    public class efecto implements Runnable{
-        Thread t;
-        int i=900;
-    @SuppressWarnings("static-access")
-    public void run () {
-          while  (i>460){
-            System.out.println("sabee2222");
-             i=i-20;
-            try {
-                    t.sleep(5);
-                    System.out.println(i);
-                    panel.setLocation(i,90 );
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(Busqueda.class.getName()).log(Level.SEVERE, null, ex);
-                }
+    
+   
+     
+  
 
-              }
-
-  }
-}
-      public class efecto_ocu implements Runnable{
-        Thread t;
-        int i=panel.getX();
-
-
-    @SuppressWarnings("static-access")
-    public void run () {
-          while  (i<=680){
-            System.out.println("sabee2222");
-             i=i+20;
-            try {
-                    t.sleep(5);
-                    System.out.println(i);
-                    panel.setLocation(i,90 );
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(Busqueda.class.getName()).log(Level.SEVERE, null, ex);
-                }
-
-              }
-
-  }
-}
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
