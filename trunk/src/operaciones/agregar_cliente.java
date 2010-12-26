@@ -129,8 +129,8 @@ public class agregar_cliente extends javax.swing.JFrame {
         });
         getContentPane().setLayout(null);
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 12));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/32x32/back.png"))); // NOI18N
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/back.png"))); // NOI18N
         jButton1.setText("Atrás");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -140,8 +140,8 @@ public class agregar_cliente extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(260, 540, 150, 40);
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 12));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/32x32/block.png"))); // NOI18N
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/block.png"))); // NOI18N
         jButton2.setText("Cancelar");
         getContentPane().add(jButton2);
         jButton2.setBounds(60, 540, 140, 40);
@@ -156,8 +156,8 @@ public class agregar_cliente extends javax.swing.JFrame {
         getContentPane().add(jLabel11);
         jLabel11.setBounds(0, 0, 4, 14);
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 12));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/32x32/next.png"))); // NOI18N
+        jButton3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/next.png"))); // NOI18N
         jButton3.setText("Siguiente");
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -284,8 +284,8 @@ public class agregar_cliente extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(880, 60, 790, 360);
 
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 12));
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/32x32/accept_page.png"))); // NOI18N
+        jButton7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/accept.png"))); // NOI18N
         jButton7.setText("Finalizar");
         jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -293,11 +293,11 @@ public class agregar_cliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton7);
-        jButton7.setBounds(630, 540, 150, 40);
+        jButton7.setBounds(720, 540, 150, 40);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 102, 0));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/48x48/add.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/add.png"))); // NOI18N
         jLabel2.setText("Agregar Cliente");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(20, 10, 330, 50);

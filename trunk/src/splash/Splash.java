@@ -60,6 +60,7 @@ public class Splash extends javax.swing.JFrame implements Runnable{
         jLabel1 = new javax.swing.JLabel();
         barra = new javax.swing.JProgressBar();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
@@ -72,15 +73,20 @@ public class Splash extends javax.swing.JFrame implements Runnable{
         setUndecorated(true);
         getContentPane().setLayout(null);
 
-        barra.setFont(new java.awt.Font("DejaVu Sans", 1, 12));
+        barra.setFont(new java.awt.Font("DejaVu Sans", 1, 12)); // NOI18N
         barra.setForeground(java.awt.Color.blue);
         barra.setStringPainted(true);
         getContentPane().add(barra);
-        barra.setBounds(10, 190, 510, 40);
+        barra.setBounds(10, 210, 520, 20);
 
-        jLabel2.setText("jLabel2");
+        jLabel2.setText("ACA VA LO QUE SE ESTA CARGANDO...");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(10, 10, 510, 170);
+        jLabel2.setBounds(10, 180, 320, 20);
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        jLabel3.setText("VALE POR UNA IMAGEN");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(20, 20, 500, 130);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -101,6 +107,7 @@ public class Splash extends javax.swing.JFrame implements Runnable{
     private javax.swing.JProgressBar barra;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 
 }

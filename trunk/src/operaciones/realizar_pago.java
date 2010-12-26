@@ -75,7 +75,7 @@ public class realizar_pago extends javax.swing.JFrame {
         jLabel2.setText("Realizar Pago");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11));
         jLabel1.setText("Nro Documento");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, 120, 30));
 
@@ -127,7 +127,7 @@ public class realizar_pago extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 350, 420, 140));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/32x32/accept.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/accept.png"))); // NOI18N
         jButton1.setText("Realizar el Pago");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 170, 50));
 
@@ -142,7 +142,7 @@ public class realizar_pago extends javax.swing.JFrame {
         jLabel4.setText("NUEVO PAGO");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 200, 20));
 
-        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 24));
         jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField2.setText("$40");
         jPanel2.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 260, 70));
@@ -151,44 +151,44 @@ public class realizar_pago extends javax.swing.JFrame {
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel12.setFont(new java.awt.Font("Aharoni", 1, 14)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Aharoni", 1, 14));
         jLabel12.setText("fecha de hoy");
         jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, 120, 20));
 
-        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 14));
         jLabel17.setText("Fecha a Pagar:");
         jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 240, 30));
 
-        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 14));
         jLabel18.setText("Estado");
         jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 130, 30));
 
-        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 14));
         jLabel19.setText("Total:");
         jPanel3.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 180, 30));
 
-        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 14));
         jLabel20.setText("2 de Noviembre del 2009");
         jPanel3.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 240, 30));
 
-        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 14));
         jLabel21.setText("$40");
         jPanel3.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 180, 30));
 
-        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 14));
         jLabel22.setForeground(new java.awt.Color(255, 0, 0));
         jLabel22.setText("vencido");
         jPanel3.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 180, 30));
         jPanel3.add(calendarComponent1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 50, -1, -1));
 
-        jLabel23.setFont(new java.awt.Font("Aharoni", 1, 14)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("Aharoni", 1, 14));
         jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 120, 20));
 
-        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 14));
         jLabel24.setText("Fecha Vencimiento:");
         jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 210, 30));
 
-        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 14));
         jLabel25.setText("17 de Noviembre del 2009");
         jPanel3.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 180, 30));
 
@@ -197,7 +197,7 @@ public class realizar_pago extends javax.swing.JFrame {
         jLabel13.setText("Utilice este formulario para realizar un pago");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 260, -1));
 
-        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 11));
         jLabel14.setText("Nombre y Apellido del cliente:");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 20, 180, 30));
 
@@ -207,7 +207,7 @@ public class realizar_pago extends javax.swing.JFrame {
         jLabel16.setText("17690998");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 50, 100, 30));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/32x32/block.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/block.png"))); // NOI18N
         jButton3.setText("CANCELAR");
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 500, 170, 50));
 
