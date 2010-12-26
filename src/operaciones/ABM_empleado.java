@@ -128,7 +128,7 @@ public class ABM_empleado extends javax.swing.JFrame {
 
         jLabel1.setText("Capacitacion del empleado");
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/32x32/accept.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/accept.png"))); // NOI18N
         jButton1.setText("Agregar");
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/32x32/block.png"))); // NOI18N

@@ -76,19 +76,10 @@ public class Busqueda extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
         jComboBox2 = new javax.swing.JComboBox();
         jLabel3 = new javax.swing.JLabel();
         jButton12 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        panel = new javax.swing.JPanel();
-        jTextField3 = new javax.swing.JTextField();
-        jComboBox4 = new javax.swing.JComboBox();
-        jLabel4 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox();
-        jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
 
         setMinimumSize(new java.awt.Dimension(760, 630));
@@ -106,7 +97,7 @@ public class Busqueda extends javax.swing.JFrame {
         });
         getContentPane().setLayout(null);
 
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/splash/Exit.png"))); // NOI18N
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/Exit.png"))); // NOI18N
         jButton9.setText("Salir");
         jButton9.setFocusable(false);
         jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -144,21 +135,14 @@ public class Busqueda extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(20, 290, 710, 190);
+        jScrollPane1.setBounds(10, 230, 710, 190);
 
         jButton10.setText("Mostrar Cliente Seleccionado");
         jButton10.setFocusable(false);
         jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton10.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(jButton10);
-        jButton10.setBounds(360, 510, 200, 70);
-
-        jButton11.setText("Reset");
-        jButton11.setFocusable(false);
-        jButton11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton11.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        getContentPane().add(jButton11);
-        jButton11.setBounds(20, 500, 150, 70);
+        jButton10.setBounds(20, 510, 200, 70);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,59 +162,13 @@ public class Busqueda extends javax.swing.JFrame {
         getContentPane().add(jLabel3);
         jLabel3.setBounds(30, 30, 230, 40);
 
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/splash/find.png"))); // NOI18N
+        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/find.png"))); // NOI18N
         jButton12.setText(" Realizar Búsqueda ");
         jButton12.setFocusable(false);
         jButton12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton12.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(jButton12);
-        jButton12.setBounds(90, 180, 150, 80);
-
-        jButton3.setText("Ocultar");
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton3MouseClicked(evt);
-            }
-        });
-        getContentPane().add(jButton3);
-        jButton3.setBounds(300, 180, 130, 30);
-
-        jButton4.setText("Relacionado a...");
-        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton4MouseClicked(evt);
-            }
-        });
-        getContentPane().add(jButton4);
-        jButton4.setBounds(300, 140, 130, 30);
-
-        panel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        panel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
-        panel.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 210, 30));
-
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Cuentas Vencida", "Cuentas al dia", "Próxima a Vencerse" }));
-        panel.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 160, 30));
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14));
-        jLabel4.setForeground(new java.awt.Color(71, 1, 1));
-        jLabel4.setText("Relacionado a..");
-        panel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 120, 40));
-
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Cuenta", "Empleado" }));
-        panel.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 80, 30));
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36));
-        jLabel1.setText("R");
-        panel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 30, 130));
-
-        getContentPane().add(panel);
-        panel.setBounds(690, 90, 290, 170);
+        jButton12.setBounds(330, 120, 150, 80);
         getContentPane().add(jSeparator1);
         jSeparator1.setBounds(0, 80, 750, 2);
 
@@ -253,18 +191,6 @@ public class Busqueda extends javax.swing.JFrame {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
-    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
-        new Thread(new efecto()).start();
-    }//GEN-LAST:event_jButton4MouseClicked
-
-    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-new Thread(new efecto_ocu()).start();
-    }//GEN-LAST:event_jButton3MouseClicked
     
     /*z
      * @param args the command line arguments
@@ -279,23 +205,14 @@ new Thread(new efecto_ocu()).start();
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton9;
     private javax.swing.JComboBox jComboBox2;
-    private javax.swing.JComboBox jComboBox4;
-    private javax.swing.JComboBox jComboBox5;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JPanel panel;
     private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
     
