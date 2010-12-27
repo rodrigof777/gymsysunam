@@ -42,10 +42,11 @@ public class ventana extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jPasswordField2 = new javax.swing.JPasswordField();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pantalla Ingreso");
-        setMinimumSize(new java.awt.Dimension(490, 390));
+        setMinimumSize(new java.awt.Dimension(350, 370));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -56,7 +57,7 @@ public class ventana extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(20, 310, 130, 40);
+        jButton3.setBounds(20, 300, 130, 40);
 
         jLabel2.setFont(new java.awt.Font("DejaVu Serif", 1, 18)); // NOI18N
         jLabel2.setText("Usuario");
@@ -70,7 +71,7 @@ public class ventana extends javax.swing.JFrame {
         getContentPane().add(jPasswordField1);
         jPasswordField1.setBounds(70, 160, 180, 30);
         getContentPane().add(jSeparator1);
-        jSeparator1.setBounds(20, 100, 290, 30);
+        jSeparator1.setBounds(0, 100, 350, 30);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -78,10 +79,10 @@ public class ventana extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 2, 2);
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
-        jLabel5.setText("Ingrese su Nombre y Clave de Acceso");
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel5.setText("GyM SyS");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(20, 60, 260, 17);
+        jLabel5.setBounds(110, 20, 100, 40);
 
         jButton2.setText("Ingresar");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -90,7 +91,7 @@ public class ventana extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(170, 310, 130, 40);
+        jButton2.setBounds(170, 300, 130, 40);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 0, 255));
@@ -100,6 +101,10 @@ public class ventana extends javax.swing.JFrame {
         jLabel7.setBounds(50, 260, 199, 13);
         getContentPane().add(jPasswordField2);
         jPasswordField2.setBounds(70, 220, 180, 30);
+
+        jLabel4.setText("ingrese su nombre y clave de acceso.");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(70, 60, 230, 14);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -133,6 +138,7 @@ public class ventana extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPasswordField jPasswordField1;
