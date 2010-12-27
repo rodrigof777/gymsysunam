@@ -89,6 +89,7 @@ public class efecto_inverso implements Runnable{ //efecto retroceso de la ventan
         jLabel15 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
+        jButton21 = new javax.swing.JButton();
         cliente = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -97,24 +98,22 @@ public class efecto_inverso implements Runnable{ //efecto retroceso de la ventan
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
         calendarComponent1 = new com.imagine.component.calendar.CalendarComponent();
-        jButton12 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jButton10 = new javax.swing.JButton();
-        jPanel8 = new javax.swing.JPanel();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel13 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jSeparator1 = new javax.swing.JSeparator();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu8 = new javax.swing.JMenu();
         jMenu9 = new javax.swing.JMenu();
@@ -158,7 +157,8 @@ public class efecto_inverso implements Runnable{ //efecto retroceso de la ventan
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setForeground(new java.awt.Color(177, 177, 177));
-        setMinimumSize(new java.awt.Dimension(1024, 730));
+        setMinimumSize(new java.awt.Dimension(1014, 770));
+        setResizable(false);
         addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 formMouseClicked(evt);
@@ -187,7 +187,7 @@ public class efecto_inverso implements Runnable{ //efecto retroceso de la ventan
                 {null, null, null, null, null}
             },
             new String [] {
-                "DIA", "HORA INICIO", "HORA FINAL", "TOTAL ", "EMPLEADO A CARGO"
+                "DIA", "HORA INICIO", "HORA FINAL", "TOTAL ", "PROFESIONAL"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -204,7 +204,7 @@ public class efecto_inverso implements Runnable{ //efecto retroceso de la ventan
 
         panelcli.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 530, 210));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11));
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setText("Cliente desde : 10 de Octubre de 2009");
         panelcli.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 260, 20));
 
@@ -249,9 +249,9 @@ public class efecto_inverso implements Runnable{ //efecto retroceso de la ventan
 
         jPanel5.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 400, 150));
 
-        panelcli.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 10, 440, 230));
+        panelcli.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 30, 440, 230));
 
-        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("RUTINA DE HOY"));
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("RUTINA"));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextArea2.setColumns(20);
@@ -319,18 +319,38 @@ public class efecto_inverso implements Runnable{ //efecto retroceso de la ventan
         jLabel18.setText("Hora");
         panelcli.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 470, 40, -1));
 
+        jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/back_1.png"))); // NOI18N
+        jButton21.setMaximumSize(new java.awt.Dimension(143, 55));
+        jButton21.setMinimumSize(new java.awt.Dimension(173, 55));
+        jButton21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton21MouseClicked(evt);
+            }
+        });
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
+        panelcli.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 40, 40, 50));
+
         getContentPane().add(panelcli, new org.netbeans.lib.awtextra.AbsoluteConstraints(-940, 70, 1010, 520));
 
         cliente.setFont(new java.awt.Font("Tahoma", 1, 18));
-        getContentPane().add(cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, 330, 30));
+        cliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clienteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, 330, 30));
 
         jLabel1.setText("Buscar Cliente:");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 170, 50));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 100, 50));
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/users.png"))); // NOI18N
-        jButton4.setText("F1:CLIENTES");
+        jButton4.setText("CLIENTES");
         jButton4.setMaximumSize(new java.awt.Dimension(143, 53));
         jButton4.setMinimumSize(new java.awt.Dimension(173, 55));
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -346,7 +366,7 @@ public class efecto_inverso implements Runnable{ //efecto retroceso de la ventan
         jPanel2.add(jButton4);
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/clock.png"))); // NOI18N
-        jButton5.setText("F2:HORARIOS");
+        jButton5.setText("HORARIOS");
         jButton5.setMaximumSize(new java.awt.Dimension(143, 55));
         jButton5.setMinimumSize(new java.awt.Dimension(173, 55));
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -357,19 +377,19 @@ public class efecto_inverso implements Runnable{ //efecto retroceso de la ventan
         jPanel2.add(jButton5);
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/attachment.png"))); // NOI18N
-        jButton6.setText("F3:RUTINAS");
+        jButton6.setText("RUTINAS");
         jButton6.setMaximumSize(new java.awt.Dimension(143, 55));
         jButton6.setMinimumSize(new java.awt.Dimension(173, 55));
         jPanel2.add(jButton6);
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/user.png"))); // NOI18N
-        jButton7.setText("F4:EMPLEADOS");
+        jButton7.setText("EMPLEADOS");
         jButton7.setMaximumSize(new java.awt.Dimension(143, 55));
         jButton7.setMinimumSize(new java.awt.Dimension(173, 55));
         jPanel2.add(jButton7);
 
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/chart.png"))); // NOI18N
-        jButton9.setText("F5:INFORMES");
+        jButton9.setText("INFORMES");
         jButton9.setMaximumSize(new java.awt.Dimension(143, 55));
         jButton9.setMinimumSize(new java.awt.Dimension(173, 55));
         jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -379,19 +399,10 @@ public class efecto_inverso implements Runnable{ //efecto retroceso de la ventan
         });
         jPanel2.add(jButton9);
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 1080, -1));
-
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/next.png"))); // NOI18N
-        jButton2.setText("Ir a Pantalla Principal");
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
-            }
-        });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, 180, 30));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 620, 1100, -1));
 
         jLabel5.setText("Búsqueda por Nombre, Apellido o DNI");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, 360, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, -1, -1));
 
         jLabel9.setText("Total Asistencias Registradas:");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 690, 210, -1));
@@ -451,53 +462,51 @@ public class efecto_inverso implements Runnable{ //efecto retroceso de la ventan
         });
         jScrollPane1.setViewportView(jTable3);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 700, 470));
-        getContentPane().add(calendarComponent1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 90, -1, 160));
-
-        jButton12.setText("Busqueda Avanzada");
-        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton12MouseClicked(evt);
-            }
-        });
-        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 20, 140, 30));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 650, 470));
+        getContentPane().add(calendarComponent1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 120, -1, 160));
 
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/find.png"))); // NOI18N
-        jButton13.setText("Buscar");
         jButton13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton13MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, 130, 30));
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 30, 50, 40));
+        getContentPane().add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, -1, -1));
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel13.setText("CLIENTES EN EL GIMNASIO");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 210, 30));
 
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/32x32/clock.png"))); // NOI18N
-        jButton10.setText("Ver Horarios del Cliente Seleccionado");
-        jButton10.setMaximumSize(new java.awt.Dimension(143, 55));
-        jButton10.setMinimumSize(new java.awt.Dimension(173, 55));
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/add.png"))); // NOI18N
         jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton10MouseClicked(evt);
             }
         });
-        jPanel3.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 260, -1));
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 30, 50, 40));
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 470, 290, 100));
-
-        jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/attachment.png"))); // NOI18N
-        jButton18.setText("Ver Rutina del cliente seleccionado");
+        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/clock.png"))); // NOI18N
         jButton18.setMaximumSize(new java.awt.Dimension(143, 55));
         jButton18.setMinimumSize(new java.awt.Dimension(173, 55));
-        jPanel8.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 260, -1));
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 30, -1, 40));
 
-        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/user.png"))); // NOI18N
-        jButton19.setText("Ver Empleado Del Cliente Seleccionado");
+        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/delete.png"))); // NOI18N
         jButton19.setMaximumSize(new java.awt.Dimension(143, 55));
         jButton19.setMinimumSize(new java.awt.Dimension(173, 55));
         jButton19.addActionListener(new java.awt.event.ActionListener() {
@@ -505,29 +514,17 @@ public class efecto_inverso implements Runnable{ //efecto retroceso de la ventan
                 jButton19ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 260, -1));
+        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 30, -1, 40));
 
-        jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/24x24/clock.png"))); // NOI18N
-        jButton20.setText("Ver Horarios del Cliente Seleccionado");
-        jButton20.setMaximumSize(new java.awt.Dimension(143, 55));
-        jButton20.setMinimumSize(new java.awt.Dimension(173, 55));
-        jButton20.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton20MouseClicked(evt);
-            }
-        });
-        jPanel8.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 260, -1));
+        jLabel11.setText("INFORMACION");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 300, 190, 20));
 
-        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 270, 290, 180));
-        getContentPane().add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, -1, -1));
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane5.setViewportView(jTextArea1);
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14));
-        jLabel13.setText("CLIENTES ACTUALMENTE EN EL GIMNASIO CAPACIDAD MAX ( 20)");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 520, 30));
-
-        jLabel16.setForeground(new java.awt.Color(169, 13, 13));
-        jLabel16.setText("Dia de Hoy");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 60, 150, 20));
+        getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 330, 190, 250));
+        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 1090, 10));
 
         jMenu8.setText("Archivo");
 
@@ -663,16 +660,6 @@ jLabel2.setIcon(newIcon);
         new operaciones.agregar_cliente().setVisible(true);
     }//GEN-LAST:event_jButton4MouseClicked
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-               new Thread(new efecto_inverso()).start();
-
-    }//GEN-LAST:event_jButton2MouseClicked
-
-    private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
-          new operaciones.Busqueda().setVisible(true);
-
-    }//GEN-LAST:event_jButton12MouseClicked
-
     private void jButton13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseClicked
           new Thread(new efecto()).start();
     }//GEN-LAST:event_jButton13MouseClicked
@@ -694,21 +681,42 @@ new operaciones.realizar_pago().setVisible(true);
         new operaciones.Horario().setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_jButton5MouseClicked
 
+    private void jButton16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton16MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16MouseClicked
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13ActionPerformed
+
     private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton10MouseClicked
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton19ActionPerformed
 
-    private void jButton20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton20MouseClicked
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20MouseClicked
+    }//GEN-LAST:event_jButton21ActionPerformed
 
-    private void jButton16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton16MouseClicked
+    private void jButton21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton21MouseClicked
+        new Thread(new efecto_inverso()).start();
+
+    }//GEN-LAST:event_jButton21MouseClicked
+
+    private void clienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16MouseClicked
+    }//GEN-LAST:event_clienteActionPerformed
 
     /**
     * @param args the command line arguments
@@ -726,13 +734,11 @@ new operaciones.realizar_pago().setVisible(true);
     private com.imagine.component.calendar.CalendarComponent calendarComponent1;
     private javax.swing.JTextField cliente;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
@@ -741,11 +747,11 @@ new operaciones.realizar_pago().setVisible(true);
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
@@ -792,15 +798,15 @@ new operaciones.realizar_pago().setVisible(true);
     private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
@@ -809,6 +815,7 @@ new operaciones.realizar_pago().setVisible(true);
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     public javax.swing.JPanel panelcli;
     // End of variables declaration//GEN-END:variables
